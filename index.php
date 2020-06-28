@@ -7,6 +7,6 @@ github pages website
 </head>
 <body>
 <h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<p>Aye yo dirt ass boi stank ass boi afro Head ass boi</p>
 </body>
 </html>
