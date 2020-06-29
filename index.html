@@ -120,17 +120,22 @@
     <p>Lets get in touch and talk about your next project.</p>
 
 
-    &emsp;&emsp;&emsp;&emsp;&emsp;
+    
     <div class="w3-row-padding w3-grayscale">
-      &emsp;&emsp;&emsp;&emsp;
+      
     <div class="w3-col l3 m6 w3-margin-bottom">
       <img src="https://i.imgur.com/TLSe4tE.png" alt="Nabil" style="width:100%">
       <h3>John Doe</h3>
       <p class="w3-opacity">CEO & Founder</p>
       <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <a class="trigger_popup_fricc"><button class="w3-button w3-light-grey w3-block">Contact</button></a>
+      <button class="w3-button w3-light-grey w3-block open-button" onclick="openForm()">Contact</button>
 
-      <a class="trigger_popup_fricc">bruh </a>
+      <div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Contact me at 619 340 6281</h1>
+  </form>
+    </div>
+      
     </div>
 
 <!--     <div class="w3-col l3 m6 w3-margin-bottom">
@@ -154,13 +159,6 @@
       <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
       <p><button class="w3-button w3-light-grey w3-block trigger_popup_fricc">Contact</button></p>
     </div> -->
-    <div class="hover_bkgr_fricc">
-        <span class="helper"></span>
-        <div>
-            <div class="popupCloseButton">&times;</div>
-            <p>Contact me at 619 340 6281</p>
-        </div>
-    </div>
   </div>
   
 <!--     <form action="/action_page.php" target="_blank">
@@ -172,24 +170,18 @@
         <i class="fa fa-paper-plane"></i> SEND MESSAGE
       </button>
     </form> -->
-  </div>
-  
 <!-- Image of location/map -->
 <div class="w3-container">
   <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
 </div>
 <script>
-  $(window).load(function () {
-    $(".trigger_popup_fricc").click(function(){
-       $('.hover_bkgr_fricc').show();
-    });
-    $('.hover_bkgr_fricc').click(function(){
-        $('.hover_bkgr_fricc').hide();
-    });
-    $('.popupCloseButton').click(function(){
-        $('.hover_bkgr_fricc').hide();
-    });
-});
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
 </script>
 <!-- End page content -->
 </div>
