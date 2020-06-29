@@ -168,7 +168,19 @@
 <div class="w3-container">
   <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
 </div>
-
+<script>
+  $(window).load(function () {
+    $(".trigger_popup_fricc").click(function(){
+       $('.hover_bkgr_fricc').show();
+    });
+    $('.hover_bkgr_fricc').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+    $('.popupCloseButton').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+});
+</script>
 <!-- End page content -->
 </div>
 
