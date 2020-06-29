@@ -9,10 +9,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
   border: none;
   cursor: pointer;
   opacity: 0.8;
-  position: fixed;
   bottom: 23px;
-  right: 28px;
-  width: 280px;
+  left: 28px;
+  width: 200px;
 }
 
 /* The popup form - hidden by default */
